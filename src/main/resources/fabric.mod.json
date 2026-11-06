@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "map-tooltip",
+  "version": "${version}",
+  "name": "Map Tooltip",
+  "description": "Client-side only. Replace any existing map's image on your own screen with a picture of your choice. Built for Minecraft 1.21.8.",
+  "authors": [
+    "Map Tooltip"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/map-tooltip/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.maptooltip.client.MapTooltipClient"
+    ]
+  },
+  "mixins": [
+    "map-tooltip.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.17.2",
+    "minecraft": "1.21.8",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
